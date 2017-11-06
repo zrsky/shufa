@@ -1,0 +1,265 @@
+/*初始化css*/
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/*/初始化css*/
+body {
+	// height: 1000px;
+	background-image: url("../img/书法家协会-活动信息2-背景.png");
+	background-size: cover;
+}
+
+/*web字体*/
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?9y6w53');
+	src: url('../fonts/icomoon.eot?9y6w53#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?9y6w53') format('truetype'), url('../fonts/icomoon.woff?9y6w53') format('woff'), url('../fonts/icomoon.svg?9y6w53#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;  /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e901";
+	p
+}
+
+.icon-phone:before {
+	content: "\e942";
+}
+
+.icon-envelop:before {
+	content: "\e945";
+}
+.icon-play:before {
+  content: "\ea1c";
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 5px;
+}
+.icon-tux:before {
+	content: "\eabd";
+}
+
+
+/*/web字体*/
+
+/*导航*/
+.navbar {
+	// height: 80px;
+	position: relative;
+	min-height: 80px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	// border-bottom: 2px solid #ccc;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 60%);
+}
+
+.navbar .navbar-brand span {
+	font-size: 24px;
+	color: #323232;
+}
+
+.navbar span > img.icon-shu {
+	width: 61px;
+	height: 61px;
+	margin-right: 10px;
+}
+
+.navbar .nav li a {
+	list-style: none;
+	float: left;
+	color: #323232;
+	font-size: 16px;
+	margin-top: 20px;
+
+}
+/*/导航*/
+
+/*版心*/
+
+/*当前位置*/
+.banner .container .carousel {
+	box-shadow: 0 4px 8px #ccc;
+}
+.banner .position {
+	margin-top: 30px;
+	border-bottom: 3px solid #ccc;
+	font-size: 16px;
+}
+
+.banner .position p span, .banner .position p a {
+	color: #966E35;
+	text-decoration: none;
+}
+
+/*/当前位置*/
+
+/*公益活动/新闻活动*/
+.banner .activity {
+	margin: 20px 0;
+}
+
+.banner .activity .media {
+	padding: 20px 0 30px 0;
+	border-bottom: 1px dashed #ccc;
+}
+
+/*/公益活动/新闻活动*/
+.pagination {
+	margin: 0 150px 30px;
+}
+
+/*分页*/
+.pagination > li > a {
+	background-color: #eee;
+	height: 50px;
+	width: 70px;
+	line-height: 36px;
+	text-align: center;
+}
+
+/*/分页*/
+
+/*/版心*/
+
+/*footer*/
+.footer {
+	background-color: rgba(215, 215, 215, 0.5);
+	// height: 400px;
+	padding: 70px 0 20px 0;
+}
+.footer > .container > ul {
+	min-height: 180px;
+}
+.footer > .container > ul > li {
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	// margin-right: 50px;
+	position: relative;
+}
+
+.footer > .container > ul > li > ul {
+	position: absolute;
+	left: 14px;
+	top: 17px;
+	padding: 0;
+}
+
+.footer > .container > ul > li > ul > li {
+	font-size: 14px;
+	color: #919090;
+	font-weight: normal;
+	margin-top: 20px;
+	width: 100px;
+}
+
+.footer ul li {
+	list-style: none;
+}
+
+// .footer .erweima {
+	// 	width: 240px;
+	//
+}
+
+.footer .erweima img {
+	width: 150px;
+	height: 146px;
+}
+.footer .erweima p {
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+    margin-top: 5px;
+}
+.footer .jumbotron {
+	background-color: transparent;
+	padding: 0 0 0 20px;
+}
+
+.footer .jumbotron p {
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer .jumbotron p span {
+	font-weight: normal;
+	font-size: 15px;
+}
+.footer .jumbotron p i {
+	margin-right: 10px;
+}
+.footer .copyright p {
+	padding-top: 50px;
+	font-size: 15px;
+}
+
+/*/footer*/
+
+/*bootstrap源码更改*/
+.btn-default {
+	width: 120px;
+	height: 40px;
+	margin-right: 8px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #866825;
+	border-color: #866825;
+	border-radius: 0;
+}
+
+.btn-default:focus, .btn-default.focus {
+	color: #fff;
+	background-color: #866825;
+	border-color: #866825;
+}
+
+.btn-default:hover {
+	color: #fff;
+	background-color: #866825;
+	border-color: #866825;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #866825;
+	border-color: #866825;
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+	color: #fff;
+	background-color: #866825;
+	border-color: #866825;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	background-image: none;
+}
+
+.btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus {
+	background-color: #866825;
+	border-color: #866825;
+}
+
+.btn-default .badge {
+	color: #fff;
+	background-color: #fff;
+}
+
+/*/bootstrap源码更改
